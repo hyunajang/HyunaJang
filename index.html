@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Holiday</title>
+    <link rel="styleSheet" href="StyleSheet.css"/>
+    <script src="jquery-1.12.4.js"></script>
+    <script src="movie.js"></script>
+</head>
+<body>
+    <!-- information, character, multimedia 등의 이름을 일부러 같게 한다 호출(활성화)하기 위해 -->
+    <hgrouop id="title">
+        <h1 data-name="information">Information</h1>
+        <h1 data-name="character">Character</h1>
+        <h1 data-name="multimedia">Multimedia</h1>
+    </hgrouop>
+    <section id="container">
+        <!-- class="active"를 줘야 첫 화면에 main페이지가 보이게 된다 -->
+        <div id="main" data-name="main"class="active">
+            <img src="Images/Middle_Foreground.png">
+        </div>
+        <div id="information" data-name="information">
+            <img src="Images/Information_Image.png">
+            <div class="description">
+                <p>제26회 아카데미 시상식 여우주연상, 의상상, 원작상 / 작품상, 감독상, 남우조연상, 각색상, 미술상, 촬영상 후보작.로맨틱 코미디의 고전으로 알려진 영화이다. 미국에서도 150만 달러로 만들어져 1200만 달러를 벌어들이며 흥행도 성공했지만 유달리 대한민국과 일본에서 인기를 끌었고 세월이 지나도 인기가 엄청났다. 동아시아권에서는 2008년에도 헵번이 핸드폰 광고에 등장하고 일본 영화지 키네마 순보가 영화 할리우드 역사상 최고 걸작 100 선정에서 이 작품이 들어갈 정도로 불세출의 명작 정도로 취급한다.</p>
+                <p>미국 파라마운트 픽쳐스에서 1953년에 만든 흑백 영화. 감독 윌리엄 와일러, 그레고리 펙, 오드리 헵번 주연.일단 AFI (미국영화연구소)에서 선정한 역사상 최고의 로맨틱 코미디 4위에 선정되기도 했듯 서양에서도 이 작품을 명작으로 평가하지만, 어디까지나 '로맨틱 코미디 장르' 안에서의 걸작 정도로 쳐주는 정도고, 할리우드 불멸의 걸작 100에 들어갈 정도는 아니라서 [1] 일본 영화지 평가에 대하여 좀 어리둥절해 하는 모습을 보이기도 한다.</p>
+        </div>
+    </div>
+        <div id="character" data-name="character">
+            <a hret="#">Left Button</a>
+            <a hret="#">Right Button</a>
+            <article class="show">
+                <h1>Princess Ann</h1>
+                <img src="Images/Character_Text_1.png"/>
+                <img src="Images/Character_1.png"/>
+                <p>오드리 헵번은 할리우드를 대표하는 미녀 배우였으며, 20세기 대중문화의 아이콘 중 한 명으로 꼽힌다. 은퇴 이후에는 유니세프에서 난민 구호활동에 노력을 기울였으며, 이로 인해 1992년 미국 대통령 자유 훈장의 수훈자가 되었다. 캐서린 헵번과 베티 데이비스에 이어 AFI(미국영화협회) 선정 가장 위대한 여성 배우 3위에 선정되었다.</p>
+            </article>
+            <article>
+                <h1>Joe Bradley</h1>
+                <img src="Images/Character_Text_2.png"/>
+                <img src="Images/Character_2.png"/>
+                <p>우수한 연기자로서 연기 인생에서 오스카 수상 1회/ 노미네이트 4회, 골든글로브상 수상 4회[3], 노미네이트 3회, 에미상 1회 노미네이트를 비롯해 화려한 이력을 갖고 있으며 온갖 구설수가 오가는 할리우드에서도 깔 곳을 찾기 힘든 대인배로도 명성이 자자하다.
+                    목소리로도 유명한데, 4개의 목소리를 가져 작품마다 다른 목소리를 들려주는 연기를 했다. 물론 일상생활에서도 저런건 아니다. 연기할 때 같은 목소리만 낸다면 관객들에게 연기가 항상 같게 다가올 수 있기 때문에 인위적으로 다른 목소리를 내려고 한 것. 다만 이 것 때문에 성대에 문제가 생겨 상대적으로 일찍 배우에서 은퇴했다.</p>
+            </article>
+            <article>
+                <h1>Radovich</h1>
+                <img src="Images/Character_Text_3.png"/>
+                <img src="Images/Character_3.png"/>
+                <p>A graduate of the University of Minnesota, Eddie Albert was a circus trapeze flier before becoming a stage and radio actor. He made his film debut in 1938 and has worked steadily since, often cast as the friendly, good-natured buddy of the hero but occasionally being cast as a villain; one of his most memorable roles was as the cowardly,</p>
+            </article>
+        </div>
+        <div id="multimedia" data-name="multimedia">
+            <iframe width="940" height="480" src="https://www.youtube.com/embed/U_FjmOn55pE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <nav id="main_navigation">
+        <ul>
+            <li><a href="#" data-target="information">Movie Info</a></li>
+            <li><a href="#" data-target="character">Character</a></li>
+            <li><a href="#"data-target="multimedia"> Multimedia</a></li>
+            <li><a href="#">Downroad</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
